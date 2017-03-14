@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "3 - Postgres",
+		"_postman_id": "f057cf75-02a2-e15e-461d-88f5dd8ce636",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Postgres Add Show",
+			"request": {
+				"url": "localhost:1337/showwithmodel",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Another Awesome Show\",\n\t\"episodeNum\": 106,\n\t\"description\": \"field isn't modeled. won't save\"\n}"
+				},
+				"description": "Add show to Postgres database.  Primary key is episodeNum."
+			},
+			"response": []
+		},
+		{
+			"name": "Postgres Get Shows",
+			"request": {
+				"url": "localhost:1337/showwithmodel",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Postgres Update Show",
+			"request": {
+				"url": "localhost:1337/showwithmodel/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Angular 4\",\n    \"episodeNum\": 107\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Postgres Delete Show",
+			"request": {
+				"url": "localhost:1337/showwithmodel/105",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

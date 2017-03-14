@@ -1,0 +1,106 @@
+{
+	"variables": [],
+	"info": {
+		"name": "4 - Completed",
+		"_postman_id": "78faa699-7b6c-08c0-51ce-07d87ff9a670",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Completed Shows",
+			"request": {
+				"url": "localhost:1337/completedshow",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Completed Show Find By Id",
+			"request": {
+				"url": "localhost:1337/completedshow/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Completed Add Show",
+			"request": {
+				"url": "localhost:1337/completedshow",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Rapid Api Dev with Sails\",\n\t\"episodeNum\": 110,\n\t\"description\": \"testing\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Completed Update Show",
+			"request": {
+				"url": "localhost:1337/show/4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Angular 4\",\n    \"createdAt\": \"2017-03-14T15:39:50.438Z\",\n    \"updatedAt\": \"2017-03-14T15:39:50.438Z\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Completed Delete Show",
+			"request": {
+				"url": "localhost:1337/completedshow/13",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Completed Without Route: getShowsSortedByTitle",
+			"request": {
+				"url": "localhost:1337/completedshow/getShowsSortedByTitle",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Completed Route: Sort By Title",
+			"request": {
+				"url": "localhost:1337/completedshow/sortByTitle",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

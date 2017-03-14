@@ -1,0 +1,10 @@
+<h1>
+  {{title}}
+</h1>
+<p><button (click)="addShow()">Add Show</button></p>
+<div *ngFor="let show of shows">
+  <p>
+    {{ show.episodeNum }} - {{ show.title}}
+  </p>
+</div>
+<router-outlet></router-outlet>

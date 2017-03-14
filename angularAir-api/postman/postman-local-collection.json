@@ -1,0 +1,106 @@
+{
+	"variables": [],
+	"info": {
+		"name": "1 - Local",
+		"_postman_id": "2b8bfa09-6682-cd74-2a3c-3f2630030124",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Shows Local",
+			"request": {
+				"url": "localhost:1337/show",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Show Find By Id",
+			"request": {
+				"url": "localhost:1337/show/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Show",
+			"request": {
+				"url": "localhost:1337/show",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Rapid Api Dev with Sails\",\n\t\"episodeNum\": 104,\n\t\"description\": \"testing\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Show",
+			"request": {
+				"url": "localhost:1337/show/14",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Angular 4\",\n    \"episodeNum\": 107,\n    \"createdAt\": \"2017-03-14T15:39:50.438Z\",\n    \"updatedAt\": \"2017-03-14T15:39:50.438Z\",\n    \"id\": 4\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Show",
+			"request": {
+				"url": "localhost:1337/show/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Without Route: getShowsSortedByTitle",
+			"request": {
+				"url": "localhost:1337/show/getShowsSortedByTitle",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Route: Sort By Title ",
+			"request": {
+				"url": "localhost:1337/completed/show/sortByTitle",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

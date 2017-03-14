@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "2 - Policies",
+		"_postman_id": "b21fe134-a3de-eb71-fa5d-5a3d8fb14f32",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Admin",
+			"request": {
+				"url": "localhost:1337/admin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Justin James\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Admin",
+			"request": {
+				"url": "localhost:1337/admin",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Not Authenticated",
+			"request": {
+				"url": "localhost:1337/show/sortByTitle",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
